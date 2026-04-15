@@ -1,0 +1,21 @@
+import shapes
+
+print("1. Circle\n2. Rectangle\n3. Triangle")
+choice = int(input("Enter choice: "))
+
+if choice == 1:
+    r = float(input("Enter radius: "))
+    print("Area of Circle:", shapes.circle_area(r))
+
+elif choice == 2:
+    l = float(input("Enter length: "))
+    w = float(input("Enter width: "))
+    print("Area of Rectangle:", shapes.rectangle_area(l, w))
+
+elif choice == 3:
+    b = float(input("Enter base: "))
+    h = float(input("Enter height: "))
+    print("Area of Triangle:", shapes.triangle_area(b, h))
+
+else:
+    print("Invalid choice")
